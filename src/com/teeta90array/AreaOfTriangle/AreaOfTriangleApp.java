@@ -18,7 +18,7 @@ public class AreaOfTriangleApp {
 		
 		// create a scanner object
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the coordinates of the three points:(e.g.: x1 x2 x3 y1 y2 y3) ");
+		System.out.println("Enter the coordinates of the three points:(e.g.: Enter each ordinate and press enter one the other according to: x1 x2 x3 y1 y2 y3) ");
 		x1 = input.nextDouble();
 		x2 = input.nextDouble();
 		x3 = input.nextDouble();
@@ -29,15 +29,15 @@ public class AreaOfTriangleApp {
 		//	close scanner object
 		input.close();
 		
-		System.out.println("(x1,y1):"+"("+x1+","+y1+") and "+ "(x2,y2):"+"("+x2+","+y2+")");
+		System.out.println("(x1,y1) --> "+"("+x1+","+y1+") and "+ "(x2,y2) --> "+"("+x2+","+y2+")");
 		side1 = findDistanceBtwPoint(x1, x2, y1, y2);
 		System.out.println("side1: "+side1);
 
-		System.out.println("(x1,y3):"+"("+x1+","+y1+") and "+ "(x3,y3):"+"("+x3+","+y3+")");
+		System.out.println("(x1,y3) --> "+"("+x1+","+y1+") and "+ "(x3,y3) --> :"+"("+x3+","+y3+")");
 		side2 = findDistanceBtwPoint(x1, x3, y1, y3);
 		System.out.println("side2: "+side2);
 		
-		System.out.println("(x2,y2):"+"("+x2+","+y2+") and "+ "(x3,y3):"+"("+x3+","+y3+")");
+		System.out.println("(x2,y2) --> "+"("+x2+","+y2+") and "+ "(x3,y3) --> "+"("+x3+","+y3+")");
 		side3 = findDistanceBtwPoint(x2, x3, y2, y3);
 		System.out.println("side3: "+side3);
 		
